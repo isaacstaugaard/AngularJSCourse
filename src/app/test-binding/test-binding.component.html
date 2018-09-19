@@ -1,0 +1,9 @@
+<label>Username Field</label>
+<input type="text" name="form-control"
+[(ngModel)]="username">
+<p>{{ username }}</p>
+
+<button 
+class="btn btn-primary" 
+[disabled]="checkStrings()"
+(click)="onUpdateUsername()">Click me!</button>
